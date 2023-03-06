@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ewm{
+            background: url(./spirite.png);
+            /* 宽：372-280 = 92 */
+            width:92px;
+            /* 高 93 - 4 = 89px */
+            height: 89px;
+            /* 背景图片位置 */
+            background-position:-280px -4px;
+
+        }
+        .shop{
+            background: url(./spirite.png);
+            /* 335-190 = 145 */
+            width: 145px;
+            /* 203-179 = 24 */
+            height:26px ;
+            background-position:-189px -179px ;
+
+        }
+        .arr{
+            width: 55px;
+            height: 55px;
+            background: url(./spirite.png);
+            background-position: 0 -414px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用精灵图/雪碧图的步骤 -->
+    <!-- 1.通过画图的方式打开图片
+         2.画图里面打开网状线和网格
+         3.测量并计算图片的宽高（通过xy坐标）
+         4.找对应的坐标通过设置负值实现背景图片定位
+    -->
+
+
+    <div class="ewm">
+
+    </div>
+    <div class="shop">
+
+    </div>
+    <div class="arr">
+
+    </div>
+    
+</body>
+</html>

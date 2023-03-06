@@ -1,0 +1,560 @@
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        body {
+            background: rgb(241, 243, 245);
+        }
+
+        .bg1 {
+            background: rgb(0, 0, 0);
+            font-size: 12px;
+        }
+
+        .bg2 {
+            background: #fff;
+        }
+
+        .bg1 {
+            height: 36px;
+        }
+
+        .bg2 {
+            height: 74px;
+        }
+
+        .bg1 a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .bg1 li,
+        .bottom li {
+            position: relative;
+        }
+
+        .bg1 li::before,
+        .bottom li::before {
+            content: "";
+            width: 1px;
+            height: 10px;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            background: #414141;
+        }
+
+        .icon-goumaiyemiande-xiaogouwuche {
+            font-size: 14px;
+            line-height: 14px;
+            padding-right: 8px;
+        }
+
+        .icon-Arrow-Small {
+            font-size: 12px;
+            padding-left: 8px;
+        }
+
+        .bg1 ul li:nth-child(6):before,
+        .bg1 ol li:nth-child(1):before,
+        .bg1 ol li:nth-child(6):before,
+        ol li:last-child:before {
+            display: none;
+        }
+
+        .bg1 ol li:nth-child(7) {
+            background-color: rgb(66, 66, 66);
+        }
+
+        .bg1 li:hover>a {
+            color: #fff;
+        }
+
+        .bg1 .submenu-wrap {
+            position: relative;
+        }
+
+        .submenu-wrap:hover {
+            background-color: #fff;
+        }
+
+        /* li分割线 */
+        .submenu-wrap:hover:before {
+            display: none;
+        }
+
+        .site-subnav a,
+        .submenu-wrap:hover dl a,
+        .left-nav-wrap a {
+            color: #414141;
+        }
+
+        .left-nav li:hover {
+            color: #000;
+        }
+
+        .bg1 .submenu-wrap:hover>a,
+        .site-subnav>a:hover,
+        .submenu-wrap dl a:hover,
+        .left-nav-wrap a:hover {
+            color: #CF0A2C;
+        }
+
+        .bg1 li.submenu-wrap>dl {
+            width: 120px;
+            text-align: center;
+        }
+
+        .submenu-wrap .site-subnav {
+            width: 893px;
+            height: 286px;
+            padding-top: 30px;
+        }
+
+        .submenu-wrap>dl,
+        .submenu-wrap .site-subnav {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: #fff;
+            z-index: 2;
+        }
+
+        .submenu-wrap:hover .site-subnav,
+        .submenu-wrap:hover dl {
+            display: block;
+        }
+
+        .submenu-wrap:hover .icon-Arrow-Small {
+            display: inline-block;
+            transform: rotateZ(180deg);
+            padding: 0 8px 0 0;
+        }
+
+        /* bg1 nav浮动 */
+        .head-nav1 ul,
+        .head-nav1 li {
+            float: left;
+            padding: 0 8px;
+            line-height: 36px;
+        }
+
+        .head-nav1 ol {
+            float: right;
+        }
+
+        .site-subnav>a {
+            display: inline-block;
+            text-align: center;
+            margin: 10px 10px 0 30px;
+        }
+
+        .site-subnav .first-page {
+            width: 50px;
+            height: 50px;
+            background: url("../image/icon/精灵图的使用/icon-common.svg") no-repeat -202px 0;
+        }
+
+        .site-subnav a,
+        .site-subnav dl,
+        .site-subnav dd {
+            float: left;
+        }
+
+        .site-subnav dl {
+            width: 176px;
+            margin-left: 20px;
+        }
+
+        .site-subnav dt {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .site-subnav dd {
+            width: 82px;
+            font-size: 12px;
+        }
+
+        .site-subnav dt,
+        .site-subnav dd {
+            padding: 2px 4px;
+        }
+
+        /* .bg2 */
+        .bg2 {
+            background: #fff;
+        }
+
+        .head-nav2 {
+            height: 74px;
+        }
+
+        .head-nav2 img {
+            height: 74px;
+            margin-right: 60px;
+        }
+
+        .head-nav2 div,
+        .head-nav2 li {
+            float: left;
+        }
+
+        .head-nav2 ul {
+            display: inline-block;
+        }
+
+        .head-nav2 li {
+            font-size: 16px;
+            height: 74px;
+            line-height: 74px;
+            margin-left: 40px;
+            font-weight: 500;
+        }
+
+        .head-nav2 a {
+            /* inline元素 float之后 自动变成 block元素 */
+            float: right;
+            line-height: 74px;
+        }
+
+        /* 此法 垂直居中，需要计算 父子元素 高度差！
+         .head-nav2 svg {
+            display: block;
+            padding: 24px 0;
+        } */
+        .head-nav2 svg {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* slider */
+        /* .slider {
+            width: 3840px;
+            height: 550px;
+        } */
+        .box {
+            position: relative;
+        }
+
+        .left-nav-wrap {
+            position: absolute;
+            top: 25px;
+            z-index: 1;
+        }
+
+        .left-nav {
+            width: 200px;
+            padding-top: 10px;
+            background: rgb(255, 255, 255, .8);
+        }
+
+        .left-nav li {
+            padding: 10px 16px;
+            /* 清除i的浮动 */
+            height: 40px;
+        }
+
+        .left-nav i {
+            float: right;
+        }
+
+        .left-nav,
+        .left-subnav {
+            float: left;
+            height: 500px;
+        }
+
+        .left-subnav {
+            /* display: flex; */
+            display: none;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 476px;
+            background: #fff;
+        }
+
+        .left-subnav li {
+            height: 80px;
+            line-height: 80px;
+            margin: 10px 0;
+            padding-left: 90px;
+            background-size: contain;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+        }
+
+        .left-subnav li:nth-child(1) {
+            background-image: url("../image/swich-imgs/1.png");
+        }
+
+        .left-subnav li:nth-child(2) {
+            background-image: url("../image/swich-imgs/2.png");
+        }
+
+        .left-subnav li:nth-child(3) {
+            background-image: url("../image/swich-imgs/3.png");
+        }
+
+        .left-subnav li:nth-child(4) {
+            background-image: url("../image/swich-imgs/4.png");
+        }
+
+        .left-subnav li:nth-child(5) {
+            background-image: url("../image/swich-imgs/5.png");
+        }
+
+        .left-subnav li:nth-child(6) {
+            background-image: url("../image/swich-imgs/6.png");
+        }
+
+        .left-subnav li:nth-child(7) {
+            background-image: url("../image/swich-imgs/7.png");
+        }
+
+        .left-subnav li:last-child {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 50px;
+            margin: 20px 0 0 20px;
+            background: url("../image/swich-imgs/see-more.png") no-repeat 0 0/contain;
+        }
+
+        .head-bottom img {
+            width: 45px;
+            margin-bottom: 10px;
+        }
+
+        .head-bottom li {
+            float: left;
+            height: 95px;
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+            transition: transform linear .3s;
+        }
+
+        .head-bottom li:hover {
+            font-weight: 600;
+        }
+
+        .head-bottom li:hover img {
+            transform: scale(1.5);
+        }
+
+        /* content */
+        .content>div {
+            margin-bottom: 30px;
+        }
+
+        .content .title {
+            height: 64px;
+            line-height: 64px;
+            font-weight: 500;
+        }
+
+        .title span:first-child {
+            font-size: 24px;
+        }
+
+        .title span:last-child {
+            float: right;
+            font-weight: 400;
+            opacity: .5;
+        }
+
+        .content ul {
+            /* 清除浮动 */
+            overflow: hidden;
+            width: 100%;
+            margin-left: -10px;
+        }
+
+        .content li {
+            float: left;
+            width: 290px;
+            height: 386px;
+            margin: 10px 0 0 10px;
+            padding: 0 20px;
+            /* border: 1px solid red; */
+            background: #fff;
+            text-align: center;
+            line-height: 2;
+            /* text-align,line-height,white-space等 文本属性 可以 被后代 继承！！！ */
+            white-space: nowrap;
+        }
+
+        .content li h5 {
+            /* 以下2种属性只能作用于 直接 包含文本 的标签，无法继承而来！！！ */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .content li:hover {
+            border-color: rgb(241, 243, 245);
+            box-shadow: rgb(0 0 0 / 10%) 0px 0px 36px;
+        }
+
+        .content img {
+            width: 70%;
+            margin: 36px 0;
+        }
+
+        .content li>p {
+            font-weight: 500;
+        }
+
+
+        footer {
+            background: #fff;
+        }
+
+        /* foot */
+        .foot ul {
+            height: 102px;
+        }
+
+        .foot ul li {
+            width: 200px;
+            height: 102px;
+            float: left;
+            padding-left: 40px;
+            margin: 0 50px;
+            line-height: 102px;
+        }
+
+        .foot ul li:first-child {
+            background: url("../image/icon/foot-top/1.webp") no-repeat 0 center/24px;
+        }
+
+        .foot ul li:nth-child(2) {
+            background: url("../image/icon/foot-top/2.webp") no-repeat 0 center/24px;
+        }
+
+        .foot ul li:nth-child(3) {
+            background: url("../image/icon/foot-top/3.webp") no-repeat 0 center/24px;
+        }
+
+        .foot ul li:nth-child(4) {
+            background: url("../image/icon/foot-top/4.webp") no-repeat 0 center/24px;
+        }
+
+        /* main */
+        .main {
+            padding: 40px 0;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-left-width: 0;
+            border-right-width: 0;
+        }
+
+        .main-left,
+        .main-right {
+            float: left;
+        }
+
+        .main-left>dl {
+            float: left;
+            width: 156px;
+        }
+
+        .main-left dt {
+            height: 46px;
+        }
+
+        .main-left dd {
+            font-size: 12px;
+            line-height: 2;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .main-right {
+            width: 260px;
+            border-left: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: center;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        .main-right h1 {
+            font-weight: 500;
+        }
+
+        .main-right h5 {
+            color: #000;
+        }
+
+        .main-right div {
+            display: inline-block;
+            width: 70%;
+            padding: 4px 0;
+            margin: 16px 0;
+            border: 1px solid #000;
+            border-radius: 20px;
+            background: #000;
+            color: #fff;
+        }
+
+        .main-right div:hover {
+            opacity: .5;
+            cursor: pointer;
+        }
+
+        .main-right svg {
+            vertical-align: middle;
+        }
+
+        .main-right span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .main-right p {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        /* bottom */
+        .bottom {
+            width: 1200px;
+            padding-top: 40px;
+            font-size: 13px;
+            line-height: 2;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .bottom>a:first-child img {
+            width: 100px;
+            margin: 0 20px 130px 0;
+        }
+
+        .bottom>a:first-child,
+        .bottom li {
+            float: left;
+        }
+
+        .bottom>a:last-child {
+            float: right;
+        }
+
+        .bottom div {
+            display: inline-block;
+            width: 900px;
+        }
+
+        .bottom ol {
+            overflow: hidden;
+        }
+
+        .bottom ol:first-child {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .bottom li {
+            padding: 0 6px;
+        }
+
+        .bottom ol>li::before {
+            height: 14px;
+            top: 6px;
+            background: rgba(0, 0, 0, 0.4);
+        }

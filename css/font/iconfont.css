@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3896254 */
+  src: url('iconfont.woff2?t=1676424815693') format('woff2'),
+    url('iconfont.woff?t=1676424815693') format('woff'),
+    url('iconfont.ttf?t=1676424815693') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiaojiantou:before {
+  /* css中使用'\e600' 与html文本中直接用 字符实体编码'&#xe600;' 等效 ！其中&#是开头用以标明这是字符实体，x表示这是十六进制，而 CSS 的 content 接受的也是 16 进制的 Unicode 编码，所以可以直接写 content:"\e600";*/
+  content: "\e600";
+}
+
+.icon-fangdajing:before {
+  content: "\e63d";
+}
+
+.icon-goumaiyemiande-xiaogouwuche:before {
+  content: "\e637";
+}
+
+.icon-paizhao:before {
+  content: "\e642";
+}
+
+.icon-dingwei:before {
+  content: "\e604";
+}
+
+.icon-shuxian:before {
+  content: "\e638";
+}
+
+.icon-Arrow-Small:before {
+  content: "\e72e";
+}

@@ -1,0 +1,161 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    /* 兄弟元素浮动，为受影响的兄弟元素添加clear */
+    clear: both;
+    /* height: 0;
+    visibility: hidden; */
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* 商品h4小标签 */
+.content .hot:before,
+.content .new:before,
+.content .new-sell:before,
+.content .butie:before {
+    display: inline-block;
+    padding: 2px 4px;
+    margin-right: 4px;
+    border-radius: 6px;
+    background: red;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+}
+
+.content .hot:before {
+    content: '热销爆款';
+}
+
+.content .new:before {
+    content: '新品';
+}
+
+.content .new-sell:before {
+    content: '新品上市';
+}
+
+.content .butie:before {
+    content: '品牌补贴';
+}
+
+/* 商品h6小标签 */
+.content .jiangjia,
+.content .fenqi,
+.content .jifen {
+    display: inline-block;
+    padding: 0 4px;
+    margin: 0 2px;
+    border: 1px solid red;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: red;
+}
+
+.content .fenqi,
+.content .jifen {
+    border-color: #000;
+    color: #000;
+}
+
+/* 商品现价 */
+.content .xianjia,
+.content .xianjia::before {
+    text-decoration: line-through;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content li>p::before,
+.content .xianjia::before {
+    content: '¥';
+    margin-left: 4px;
+}
+
+/* foot图标 */
+.weixin:before,
+.toutiao:before,
+.weibo:before,
+.baidu:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    margin-left: 6px;
+    background: url("../image/icon/foot-top/icon-footer-about.svg") no-repeat;
+}
+
+.weixin:before {
+    background-position: -126px 4px;
+}
+
+.toutiao:before {
+    background-position: -150px 3px;
+}
+
+.weibo:before {
+    background-position: -175px 3px;
+}
+
+.baidu:before {
+    background-position: 0 -34px;
+}
+
+.weixin:hover:before {
+    background-position-y: -20px;
+}
+
+.toutiao:hover:before {
+    background-position-y: -21px;
+}
+
+.weibo:hover:before {
+    background-position-y: -21px;
+}
+
+.baidu:hover:before {
+    background-position-x: -24px;
+}
+
+/* 微信二维码显示 */
+.weixin {
+    position: relative;
+}
+
+.weixin:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 16px;
+    border: 4px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.weixin img {
+    display: none;
+
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px 0;
+}
+
+.weixin:hover img {
+    display: block;
+}
